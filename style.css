@@ -1,0 +1,491 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  padding: 20px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #111827;
+
+  border-bottom: 1px solid #334155;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #38bdf8;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 60px 20px;
+
+  background: radial-gradient(circle at top, #1e3a5f, #0f172a 60%);
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.welcome {
+  color: #38bdf8;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 52px;
+
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.intro {
+  max-width: 650px;
+
+  margin: auto;
+
+  color: #94a3b8;
+
+  font-size: 18px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+  margin-top: 30px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+
+  padding: 12px 25px;
+
+  border-radius: 8px;
+
+  background: #38bdf8;
+
+  color: #0f172a;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+
+  background: #7dd3fc;
+}
+
+.btn.secondary {
+  background: transparent;
+
+  color: #38bdf8;
+
+  border: 1px solid #38bdf8;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  padding: 80px 8%;
+
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 35px;
+
+  margin-bottom: 10px;
+}
+
+.section-text {
+  color: #94a3b8;
+
+  margin-bottom: 40px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 30px 20px;
+
+  background: #1e293b;
+
+  border: 1px solid #334155;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #38bdf8;
+}
+
+.skill-card h3 {
+  color: #38bdf8;
+
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #94a3b8;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.project-table {
+  max-width: 900px;
+
+  margin: auto;
+
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background: #1e293b;
+}
+
+th,
+td {
+  padding: 16px;
+
+  border: 1px solid #334155;
+}
+
+th {
+  background: #172033;
+
+  color: #38bdf8;
+}
+
+td a {
+  color: #38bdf8;
+
+  text-decoration: none;
+}
+
+.completed {
+  color: #4ade80;
+}
+
+.learning {
+  color: #facc15;
+}
+
+/* =========================
+   OTHER PAGES
+========================= */
+
+.page-section {
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 80px 20px;
+}
+
+.page-section h1 {
+  font-size: 45px;
+
+  margin-bottom: 25px;
+}
+
+.page-section > p:not(.welcome) {
+  color: #94a3b8;
+
+  margin-bottom: 18px;
+
+  font-size: 17px;
+}
+
+/* =========================
+   INFO BOX
+========================= */
+
+.info-box {
+  margin-top: 40px;
+
+  padding: 30px;
+
+  background: #1e293b;
+
+  border: 1px solid #334155;
+
+  border-radius: 12px;
+}
+
+.info-box h2 {
+  color: #38bdf8;
+
+  margin-bottom: 15px;
+}
+
+.info-box li {
+  margin: 10px 0;
+
+  color: #cbd5e1;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card,
+.experience-card {
+  background: #1e293b;
+
+  border: 1px solid #334155;
+
+  border-radius: 12px;
+
+  padding: 30px;
+
+  margin-top: 25px;
+
+  transition: 0.3s;
+}
+
+.education-card:hover,
+.experience-card:hover {
+  border-color: #38bdf8;
+
+  transform: translateY(-5px);
+}
+
+.education-card h2,
+.experience-card h2 {
+  color: #38bdf8;
+
+  margin-bottom: 10px;
+}
+
+.education-card h3 {
+  margin-bottom: 10px;
+}
+
+.education-card p,
+.experience-card p {
+  color: #94a3b8;
+}
+
+.status {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  background: #064e3b;
+
+  color: #4ade80;
+
+  font-size: 13px;
+}
+
+.experience-card li {
+  margin: 8px 0;
+
+  color: #cbd5e1;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+
+  padding: 40px 20px;
+
+  background: #111827;
+
+  border-top: 1px solid #334155;
+}
+
+footer h3 {
+  color: #38bdf8;
+
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #38bdf8;
+
+  text-decoration: none;
+}
+
+footer button {
+  margin-top: 15px;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #38bdf8;
+
+  color: #0f172a;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+footer button:hover {
+  background: #7dd3fc;
+}
+
+.copyright {
+  margin-top: 20px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .btn {
+    width: 200px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
