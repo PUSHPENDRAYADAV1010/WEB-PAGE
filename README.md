@@ -4,7 +4,7 @@ A simple and responsive personal website built using **HTML, CSS, and JavaScript
 
 ## 🚀 Live Demo
 
-https://tomcruise10.github.io/WEB-PAGE/
+https://pushpendrayadav1010.github.io/WEB-PAGE/
 
 ## 📌 About the Project
 
